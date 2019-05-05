@@ -115,7 +115,7 @@ function (response) {
 }
 ```
 
-这个回调函数中使用了另外一个参数，cb。cb 是一个方法，用于处理我们的返回结果，对 redux 理解比较好的同学可能已经才出来了，这里我们要传入的就是触发 action 的 dispatch 方法，我们在调用接口请求到一些数据后，总要把这些数据传给 store，由 store 统一管理。
+这个回调函数中使用了另外一个参数，cb。cb 是一个方法，用于处理我们的返回结果，对 redux 理解比较好的同学可能已经猜出来了，这里我们要传入的就是触发 action 的 dispatch 方法，我们在调用接口请求到一些数据后，总要把这些数据传给 store，由 store 统一管理。
 
 下面，我们就来编写接口函数：
 
@@ -273,7 +273,7 @@ exports.getRecord = (req,res,next) => {
 }
 ```
 
-上面的逻辑代码是数据库的查询操作，查询字段 type = req.query.type 的数据返回，它对应前端街口代码如下：
+上面的逻辑代码是数据库的查询操作，查询字段 type = req.query.type 的数据返回，它对应前端接口代码如下：
 
 ```js
 export const getrecordDetail = (type) => {

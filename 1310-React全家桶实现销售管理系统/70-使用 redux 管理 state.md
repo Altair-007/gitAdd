@@ -98,7 +98,7 @@ $ cd store
 $ touch store.js
 ```
 
-`store.js` 可以看作是我们应用所维护管理的 store，这个文件将会集和我们的一些 actions 和 reducers，再将它们作为 store 导出，供 index.js 调用。
+`store.js` 可以看作是我们应用所维护管理的 store，这个文件将会集合我们的一些 actions 和 reducers，再将它们作为 store 导出，供 index.js 调用。
 
 `store.js`
 
